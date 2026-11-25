@@ -58,12 +58,12 @@
 <body>
   <div class="container">
     <h1>TapHook: NFC Webhook Trigger: Privacy Policy</h1>
-    <p><strong>Effective date:</strong> November 24, 2026<br>
+    <p><strong>Effective date:</strong> November 25, 2026<br>
     <strong>Developer:</strong> Digital NEXUS (digitalnexus.studio)<br>
     <strong>Package:</strong> <code>com.taphook.nexus</code></p>
 
     <h2>1. Summary</h2>
-    <p>TapHook sends a web request (a webhook) to an address you choose when you tap an NFC tag. Your triggers and history stay on your phone. Digital NEXUS does not collect, receive, sell or share any of your data. The app has no account, no ads and no analytics. The only purchase is the optional TapHook Pro upgrade through Google Play.</p>
+    <p>TapHook sends a web request (a webhook) to an address you choose when you tap an NFC tag. Your triggers and history stay on your phone. The app has no account. The free version shows ads from <strong>Google AdMob</strong> (never while scanning a tag or firing a webhook) and lets you watch an optional rewarded ad for an extra trigger slot. The optional one-time <strong>TapHook Pro</strong> upgrade through Google Play removes all ads and unlocks unlimited triggers, logs, and CSV export.</p>
 
     <h2>2. What the app stores</h2>
     <p>Your triggers (the NFC tag ID, a name, the web address, method, headers and message template), your settings and a log of recent runs with their result. This data is saved in the app's private storage on your device. If you put a password or API key in a header, it is kept in that same storage; the app does not encrypt it separately.</p>
@@ -72,27 +72,31 @@
     <p>When a trigger runs, the app sends the request you set up directly from your phone to the web address you entered, for example Zapier, Home Assistant or your own server. The request contains what your template says, and can include the tag ID, the time and, for triggers where you turn on location, your phone's latitude and longitude. The service at that address receives it under its own privacy policy. Nothing is sent to Digital NEXUS. The example triggers that come with the app point to httpbin.org, a public test service, and only send a request when one of them runs; edit or delete them before you rely on the app.</p>
 
     <h2>4. Permissions</h2>
-    <ul><li><strong>NFC:</strong> to read the ID of the tags you tap.</li><li><strong>Location:</strong> only for triggers where you turn on location, and only if you have allowed TapHook to use your location. The coordinates go only into that trigger's request.</li><li><strong>Vibration:</strong> for tap feedback.</li><li><strong>Internet and network state:</strong> to send your requests.</li></ul><p>The app does not use the camera, microphone, contacts or your files.</p>
+    <ul><li><strong>NFC:</strong> to read the ID of the tags you tap.</li><li><strong>Location:</strong> only for triggers where you turn on location, and only if you have allowed TapHook to use your location. The coordinates go only into that trigger's request.</li><li><strong>Vibration:</strong> for tap feedback.</li><li><strong>Internet, network state &amp; Advertising ID:</strong> to send your webhook requests, load Google AdMob ads and consent forms in the free version, and verify TapHook Pro purchases through Google Play.</li></ul><p>The app does not use the camera, microphone, contacts or your files.</p>
 
-    <h2>5. Payments</h2>
+    <h2>5. Advertising (Google AdMob) &amp; consent</h2>
+    <p>The free version shows occasional interstitial ads after you save a new trigger (at most one every few minutes, never while scanning a tag or running a webhook) and optional rewarded video ads that you choose to watch for an extra trigger slot. To serve, cap, and measure these ads, the Google Mobile Ads SDK collects and shares with Google: your device's advertising ID (Device or other IDs), IP address (indicating approximate location), app and device diagnostics/information, and ad interactions. Google processes this data under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses partner-site data</a>.</p>
+    <p>In the EEA, the UK and Switzerland, Google's consent form (UMP) asks for your choice before personalised ads are loaded, and you can change it anytime via <strong>Ad privacy choices</strong> in the app (or reset your advertising ID in Android Settings). Buying TapHook Pro removes all ads and disables consent/ad requests.</p>
+
+    <h2>6. Payments</h2>
     <p>TapHook Pro is an optional one-time purchase made through Google Play. Google handles the payment, and we never see your card details. Google tells the app whether you own Pro. Google's billing component also sends technical diagnostic information to Google (such as the results and timing of billing requests and the app version). As for any Play sale, Google gives us an order record (such as the order number, date, price and country), which we use only for accounting, refunds and support.</p>
 
-    <h2>6. Sharing</h2>
+    <h2>7. Sharing</h2>
     <p>If you tap Share on the run log, a CSV file of the log goes to the app you choose. That only happens when you do it, and that app is covered by its own privacy policy.</p>
 
-    <h2>7. Deleting your data</h2>
+    <h2>8. Deleting your data</h2>
     <p>You can delete any trigger in the app. Clearing the app's storage in Android's settings, or uninstalling the app, deletes all of its data from your phone. If Android backup is turned on for your phone, Android may keep a copy of the app's data in your own Google account backup, which you manage in your Google account. Apart from Google Play order records for Pro purchases, we hold no data about you; you can write to us with any question.</p>
 
-    <h2>8. Children</h2>
+    <h2>9. Children</h2>
     <p>The app is a work tool for adults and is not directed at children.</p>
 
-    <h2>9. Independence</h2>
+    <h2>10. Independence</h2>
     <p>TapHook is an independent app by Digital NEXUS. It is not affiliated with or endorsed by Zapier, Home Assistant or any service you connect it to.</p>
 
-    <h2>10. Changes</h2>
+    <h2>11. Changes</h2>
     <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
 
-    <h2>11. Contact</h2>
+    <h2>12. Contact</h2>
     <p>Digital NEXUS, <a href="mailto:digital.nexus.studios2@gmail.com">digital.nexus.studios2@gmail.com</a>, <a href="https://digitalnexus.studio">digitalnexus.studio</a></p>
 
     <div class="footer">
