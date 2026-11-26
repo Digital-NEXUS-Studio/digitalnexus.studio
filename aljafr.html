@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>علم الجفر (Al-Jafr) — حساب الجُمَّل والطبائع الأربع بالمصدر والصفحة | Digital NEXUS</title>
+<meta name="description" content="تطبيق علم الجفر يحسب القيم الأبجدية (حساب الجُمَّل المشرقي والمغربي) والطبائع الأربع من المخطوطات التراثية مع رقم المخطوطة والصفحة، دون جمع بيانات.">
+<link rel="canonical" href="https://www.digitalnexus.studio/aljafr">
+<link rel="icon" type="image/png" href="icons/aljafr.png">
+<meta property="og:title" content="علم الجفر (Al-Jafr) — حساب الجُمَّل والطبائع الأربع من كتب التراث">
+<meta property="og:description" content="اكتب الاسم ليُحسب بحساب الجُمَّل والطبائع الأربع (نار وتراب وهواء وماء) مع توثيق المخطوطات مثل British Library Add MS 7473 على جهازك فقط.">
+<meta property="og:image" content="https://www.digitalnexus.studio/shots/aljafr/demo-poster.jpg">
+<meta property="og:url" content="https://www.digitalnexus.studio/aljafr">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Al-Jafr Arabic Wisdom","alternateName":"علم الجفر","operatingSystem":"Android","applicationCategory":"ReferenceApplication","inLanguage":"ar","description":"Compute classical Abjad letter values and the four temperaments from historical Arabic manuscripts with book and page citations offline on your device.","url":"https://www.digitalnexus.studio/aljafr","downloadUrl":"https://play.google.com/store/apps/details?id=com.aljafr.nexus","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Digital NEXUS","url":"https://www.digitalnexus.studio/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"هل يعمل تطبيق علم الجفر دون إنترنت؟","acceptedAnswer":{"@type":"Answer","text":"نعم، حساب الجُمَّل والطبائع الأربع وتوثيق المخطوطات تعمل محلياً على جهازك دون حسابات أو إرسال بياناتك إلى أي خادم."}},{"@type":"Question","name":"ما المصادر التراثية المعتمدة في الحساب؟","acceptedAnswer":{"@type":"Answer","text":"يعرض التطبيق جداول الحروف في المشرق والمغرب مع الإحالة الصريحة إلى المخطوطات المرجعية مثل مخطوطة المكتبة البريطانية Add MS 7473 ومفتاح الجفر الجامع مع أرقام الصفحات."}},{"@type":"Question","name":"هل التطبيق مجاني؟","acceptedAnswer":{"@type":"Answer","text":"نعم، مجاني بدعم إعلانات AdMob (+ قراءة يومية إضافية بمشاهدة إعلان مكافأة)، مع خيار ترقية Al-Jafr Pro لمرة واحدة لإزالة الإعلانات وفتح القراءات ومقارنات الأسماء غير المحدودة."}}]}</script>
+<style>
+:root{--bg:#030712;--card:#0f1623;--border:rgba(255,255,255,.12);--accent:#38bdf8;--gold:#f0c96a;--text:#f9fafb;--muted:#a1a9b8}
+@media (prefers-color-scheme: light){:root:not([data-theme=dark]){--bg:#f7f8fb;--card:#fff;--border:rgba(0,0,0,.12);--accent:#0369a1;--gold:#92400e;--text:#111827;--muted:#4b5563}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Arabic","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--accent)}
+.nav{border-bottom:1px solid var(--border);padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;direction:ltr}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font-weight:800}
+.brand img{width:32px;height:32px;border-radius:8px}
+.nav nav a{margin-left:16px;font-size:14px;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:0 16px 48px}
+.hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:38px 0 24px}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr .8fr}}
+.app-id{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.app-id img{width:60px;height:60px;border-radius:14px;border:1px solid rgba(240,201,106,.45)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.03em;color:var(--gold)}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.22;margin:8px 0 14px}
+.lead{color:var(--muted);font-size:17px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none}
+.btn-primary{background:var(--gold);color:#120d02}
+.btn-ghost{border:1px solid var(--border);color:var(--text)}
+.hero-shot img{width:100%;max-width:280px;height:auto;border-radius:18px;border:1px solid var(--border);display:block;margin:0 auto}
+.shots{display:flex;gap:12px;overflow-x:auto;padding:8px 0 4px;scroll-snap-type:x mandatory}
+.shots img{flex:0 0 auto;width:200px;height:auto;border-radius:14px;border:1px solid var(--border);scroll-snap-align:start}
+.demo-video{width:100%;max-width:280px;aspect-ratio:9/16;height:auto;border-radius:14px;border:1px solid rgba(240,201,106,.35);background:#0a111f;display:block;margin:12px auto 8px}
+.demo-caption{color:var(--muted);font-size:14px;text-align:center}
+section{margin-top:36px}
+h2{font-size:22px;margin-bottom:12px;color:var(--gold)}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.card h3{font-size:17px;margin-bottom:8px}
+.card ul{padding-right:18px;color:var(--muted)}
+.card li{margin:4px 0}
+.notice{background:rgba(240,201,106,.08);border:1px solid rgba(240,201,106,.3);border-radius:12px;padding:14px 18px;color:var(--text);font-size:15px;margin-top:22px}
+details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin-top:8px}
+.note{color:var(--muted);font-size:14px;margin-top:24px}
+footer{border-top:1px solid var(--border);padding:20px 16px;text-align:center;color:var(--muted);font-size:14px;direction:ltr}
+footer a{margin:0 8px}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="logo.png" alt="">Digital NEXUS</a>
+  <nav><a href="index.html#portfolio">All apps</a><a href="firasah.html">Firasah</a><a href="aljafr-privacy.html">Privacy</a></nav>
+</header>
+<main>
+  <div class="hero">
+    <div>
+      <div class="app-id"><img src="icons/aljafr.png" alt="أيقونة تطبيق علم الجفر"><div><strong>علم الجفر — Al-Jafr</strong><div class="eyebrow">أندرويد · حساب الجُمَّل · تراث مخطوط</div></div></div>
+      <h1>كيف حسب القدماء اسمك بحساب الجُمَّل؟</h1>
+      <p class="lead">احسب القيم العددية للحروف وفق مناهج المشرق والمغرب والطبائع الأربع (نار وتراب وهواء وماء) من المخطوطات التراثية، مع ذكر رقم المخطوطة والصفحة وبلا أي جمع للبيانات.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="/go/aljafr?s=web&amp;c=landing">حمّل مجاناً من غوغل بلاي</a>
+        <a class="btn btn-ghost" href="#demo">شاهد الفيديو</a>
+        <a class="btn btn-ghost" href="#features">المناهج والمصادر</a>
+      </div>
+    </div>
+    <div class="hero-shot"><img src="shots/aljafr/3.jpg" alt="نسب الطبائع الأربع في تطبيق علم الجفر" width="644" height="1296"></div>
+  </div>
+
+  <div class="shots" aria-label="لقطات شاشة من التطبيق">
+    <img src="shots/aljafr/1.jpg" alt="شاشة إدخال الاسم العربي في تطبيق علم الجفر" width="644" height="1296" loading="lazy">
+    <img src="shots/aljafr/2.jpg" alt="نتائج القراءة الشاملة في تطبيق علم الجفر" width="644" height="1296" loading="lazy">
+    <img src="shots/aljafr/3.jpg" alt="ميزان الطبائع الأربع ونسب العناصر" width="644" height="1296" loading="lazy">
+    <img src="shots/aljafr/4.jpg" alt="الأصل التراثي ومقارنة حساب المشرق والمغرب مع المخطوطة" width="644" height="1296" loading="lazy">
+  </div>
+
+  <div class="notice">
+    <strong>محتوى ثقافي وتراثي:</strong> يقدّم التطبيق قراءة رمزية وتاريخية لكتب الجُمَّل والمخطوطات القديمة، لأغراض الدراسة والتأمل التراثي فقط.
+  </div>
+
+  <section id="demo">
+    <h2>عروض الفيديو</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>علم الجفر: حساب الجُمَّل خطوة بخطوة (23 ثانية)</h3>
+        <p class="demo-caption">إدخال الاسم العربي، عرض الطبائع الأربع، وسجل التحقيق الرقمي برقم المخطوطة.</p>
+        <video class="demo-video" controls playsinline preload="metadata" poster="shots/aljafr/demo-poster.jpg" width="1080" height="1920">
+          <source src="media/aljafr_demo_ar_1080x1920.mp4" type="video/mp4">
+        </video>
+        <p class="demo-caption"><a href="media/aljafr_demo_ar_1080x1920.mp4">فتح الفيديو مباشر (MP4)</a></p>
+      </div>
+      <div class="card">
+        <h3>تراث الأجداد في جيبك أينما كنت (21 ثانية)</h3>
+        <p class="demo-caption">استعراض كيمياء الطبائع الأربع ومطابقة حساب المشرق والمغرب دون اتصال بالإنترنت.</p>
+        <video class="demo-video" controls playsinline preload="metadata" poster="shots/aljafr/demo-v2-poster.jpg" width="1080" height="1920">
+          <source src="media/aljafr_brand_v2_ar_1080x1920.mp4" type="video/mp4">
+        </video>
+        <p class="demo-caption"><a href="media/aljafr_brand_v2_ar_1080x1920.mp4">فتح الفيديو مباشر (MP4)</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>ماذا يقدّم تطبيق علم الجفر؟</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>جميع مناهج الحساب التراثية</h3>
+        <ul>
+          <li>القراءة الشاملة، والحساب اليدوي، ومقارنة تراكيب الأسماء في شاشة واحدة.</li>
+          <li>مقارنة دقيقة بين جُمَّل المشرق وجُمَّل المغرب ومعالجة التاء المربوطة والألف.</li>
+          <li>توزيع الطبائع الأربع (نار، تراب، هواء، ماء) بنسب واضحة وسهلة القراءة.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>توثيق المخطوطات وخصوصية كاملة</h3>
+        <ul>
+          <li>إحالات واضحة إلى المصادر المرجعية مثل مخطوطة <code>British Library Add MS 7473</code> ومفتاح الجفر الجامع.</li>
+          <li>الأسماء المدخلة تبقى على جهازك ولا تُرفع لأي خادم.</li>
+          <li>مجاني مع إعلانات AdMob (+ قراءة بمكافأة)، أو ترقية Al-Jafr Pro لمرة واحدة (€3.99) لقراءات ومقارنات غير محدودة.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>أسئلة شائعة</h2>
+    <details><summary>هل يتم إرسال الأسماء التي أكتبها إلى الإنترنت؟</summary><p>لا، جميع الحسابات تجري محلياً داخل التطبيق على هاتفك ولا يتم جمع أو تخزين بياناتك على خوادمنا.</p></details>
+    <details><summary>ما الفرق بين النسخة المجانية و Al-Jafr Pro؟</summary><p>النسخة المجانية مدعومة بإعلانات AdMob وتتيح قراءة إضافية عبر إعلانات المكافأة، بينما تزيل ترقية Al-Jafr Pro لمرة واحدة عبر غوغل بلاي الإعلانات وتفتح قراءات ومقارنات أسماء غير محدودة.</p></details>
+    <details><summary>هل يوضح التطبيق الاختلاف بين مناهج الحساب؟</summary><p>نعم، يعرض قسم «أين تتفق المناهج وأين تختلف» تفاصيل المجموع في كل طريقة مقارنةً بالمخطوطات.</p></details>
+  </section>
+
+  <p class="note">للاستفسارات والدعم: <a href="mailto:digital.nexus.studios2@gmail.com">digital.nexus.studios2@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.aljafr.nexus" rel="noopener">صفحة التطبيق على Google Play</a></p>
+</main>
+<footer>
+  <a href="index.html">Digital NEXUS</a>·<a href="firasah.html">Firasah</a>·<a href="aljafr-privacy.html">Al-Jafr privacy policy</a>·<a href="terms.html">Terms</a>
+</footer>
+</body>
+</html>
