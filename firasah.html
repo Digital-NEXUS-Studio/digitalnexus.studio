@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Firasah: Arabic Physiognomy","alternateName":"فِراسة","operatingSystem":"Android","applicationCategory":"ReferenceApplication","inLanguage":"ar","description":"Explore classical Arabic physiognomy passages with source citations, with on-device facial proportion analysis and zero photo uploads.","url":"https://www.digitalnexus.studio/firasah","downloadUrl":"https://play.google.com/store/apps/details?id=com.firasah.nexus","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Digital NEXUS","url":"https://www.digitalnexus.studio/"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"هل يرفع تطبيق فراسة صوري إلى الإنترنت؟","acceptedAnswer":{"@type":"Answer","text":"لا أبداً. تحليل النِّسَب يتم محلياً بالكامل على هاتفك، ولا تُرفع أي صورة أو بيانات بيومترية إلى خوادمنا."}},{"@type":"Question","name":"ما طبيعة القراءات المعروضة في التطبيق؟","acceptedAnswer":{"@type":"Answer","text":"محتوى ثقافي وتراثي من الكتب التاريخية العربية مثل مؤلفات شمس الدين الدمشقي والرازي وأرسطو مع ذكر الكتاب والمصدر للتأمل والقراءة التراثية."}},{"@type":"Question","name":"هل التطبيق مجاني؟","acceptedAnswer":{"@type":"Answer","text":"نعم، مجاني بدعم إعلانات AdMob مع خيار ترقية Firasah Pro مرة واحدة لإزالة الإعلانات وفتح القراءات الكاملة."}}]}</script>
 <style>
-:root{--bg:#030712;--card:#0f1623;--border:rgba(255,255,255,.12);--accent:#38bdf8;--gold:#f0c96a;--text:#f9fafb;--muted:#a1a9b8}
-@media (prefers-color-scheme: light){:root:not([data-theme=dark]){--bg:#f7f8fb;--card:#fff;--border:rgba(0,0,0,.12);--accent:#0369a1;--gold:#92400e;--text:#111827;--muted:#4b5563}}
+:root{--bg:#030712;--card:#0f1623;--border:rgba(255,255,255,.12);--accent:#38bdf8;--gold:#f0c96a;--btn-fg:#120d02;--text:#f9fafb;--muted:#a1a9b8}
+@media (prefers-color-scheme: light){:root:not([data-theme=dark]){--bg:#f7f8fb;--card:#fff;--border:rgba(0,0,0,.12);--accent:#0369a1;--gold:#92400e;--btn-fg:#ffffff;--text:#111827;--muted:#4b5563}}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"SF Arabic","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
 a{color:var(--accent)}
@@ -33,10 +33,10 @@ h1{font-size:clamp(26px,5vw,40px);line-height:1.22;margin:8px 0 14px}
 .lead{color:var(--muted);font-size:17px}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
 .btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none}
-.btn-primary{background:var(--gold);color:#120d02}
+.btn-primary{background:var(--gold);color:var(--btn-fg)}
 .btn-ghost{border:1px solid var(--border);color:var(--text)}
 .hero-shot img{width:100%;max-width:280px;height:auto;border-radius:18px;border:1px solid var(--border);display:block;margin:0 auto}
-.shots{display:flex;gap:12px;overflow-x:auto;padding:8px 0 4px;scroll-snap-type:x mandatory}
+.shots{display:flex;align-items:flex-start;gap:12px;overflow-x:auto;padding:8px 0 4px;scroll-snap-type:x mandatory}
 .shots img{flex:0 0 auto;width:200px;height:auto;border-radius:14px;border:1px solid var(--border);scroll-snap-align:start}
 .demo-video{width:100%;max-width:280px;aspect-ratio:9/16;height:auto;border-radius:14px;border:1px solid rgba(240,201,106,.35);background:#0a111f;display:block;margin:12px auto 8px}
 .demo-caption{color:var(--muted);font-size:14px;text-align:center}
