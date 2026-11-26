@@ -38,6 +38,8 @@ h1{font-size:clamp(26px,5vw,40px);line-height:1.15;margin:8px 0 14px}
 .hero-shot img{width:100%;max-width:280px;height:auto;border-radius:18px;border:1px solid var(--border);display:block;margin:0 auto}
 .shots{display:flex;gap:12px;overflow-x:auto;padding:8px 0 4px;scroll-snap-type:x mandatory}
 .shots img{flex:0 0 auto;width:200px;height:auto;border-radius:14px;border:1px solid var(--border);scroll-snap-align:start}
+.demo-video{width:100%;max-width:280px;aspect-ratio:9/16;height:auto;border-radius:14px;border:1px solid var(--border);background:#0a111f;display:block;margin:12px auto 8px}
+.demo-caption{color:var(--muted);font-size:14px;text-align:center}
 section{margin-top:36px}
 h2{font-size:22px;margin-bottom:12px}
 .grid{display:grid;grid-template-columns:1fr;gap:16px}
@@ -68,6 +70,7 @@ footer a{margin:0 8px}
       <p class="lead">Tap a tag with your phone and TapHook sends the web request you set up for it: to Zapier, Make, n8n, Home Assistant, Slack, Discord or any HTTP endpoint.</p>
       <div class="cta">
         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.taphook.nexus" rel="noopener">Get it on Google Play</a>
+        <a class="btn btn-ghost" href="#demo">Watch demo</a>
         <a class="btn btn-ghost" href="#features">See features</a>
       </div>
     </div>
@@ -78,6 +81,27 @@ footer a{margin:0 8px}
 <img src="shots/taphook/3.jpg" alt="TapHook webhook execution log" width="540" height="1098" loading="lazy">
 <img src="shots/taphook/4.jpg" alt="TapHook Pro modal" width="540" height="1098" loading="lazy">
   </div>
+  <section id="demo">
+    <h2>Demo videos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>TapHook Quick Demo (22s)</h3>
+        <p class="demo-caption">Add a trigger, tap an NFC tag (built-in test tap shown; real tags work identically), and check the HTTP 200 log.</p>
+        <video class="demo-video" controls playsinline preload="metadata" poster="shots/taphook/demo-poster.jpg" width="1080" height="1920">
+          <source src="media/taphook_demo_1080x1920.mp4" type="video/mp4">
+        </video>
+        <p class="demo-caption"><a href="media/taphook_demo_1080x1920.mp4">Open direct MP4</a></p>
+      </div>
+      <div class="card">
+        <h3>TapHook &amp; CrewTalk Walkthrough (68s)</h3>
+        <p class="demo-caption">Step-by-step walkthrough showing TapHook NFC webhooks and CrewTalk zero-account push-to-talk channels.</p>
+        <video class="demo-video" controls playsinline preload="metadata" poster="shots/taphook/howto-poster.jpg" width="1080" height="1920">
+          <source src="media/taphook_crewtalk_howto_1080x1920.mp4" type="video/mp4">
+        </video>
+        <p class="demo-caption"><a href="media/taphook_crewtalk_howto_1080x1920.mp4">Open direct MP4</a></p>
+      </div>
+    </div>
+  </section>
   <section id="features">
     <h2>What it does</h2>
     <div class="grid">
