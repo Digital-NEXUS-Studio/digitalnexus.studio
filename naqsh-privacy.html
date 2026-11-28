@@ -50,31 +50,31 @@
 <body>
   <div class="container">
     <h1>Naqsh (نَقْش): Privacy Policy</h1>
-    <p><strong>Effective date:</strong> November 27, 2026<br>
+    <p><strong>Effective date:</strong> November 28, 2026<br>
     <strong>Developer:</strong> Digital NEXUS (<a href="https://digitalnexus.studio">digitalnexus.studio</a>)<br>
     <strong>Package:</strong> <code>com.digitalnexus.naqsh</code></p>
 
     <h2>1. Overview</h2>
-    <p>Naqsh is an Arabic calligram design, on-device skin preview, and thermal stencil export studio. Digital NEXUS does not create user accounts, does not serve advertising, and does not run backend servers that collect, view, or store your designs or photos.</p>
+    <p>Naqsh is an Arabic calligram design, on-device skin preview, thermal stencil export, and 3D CAD studio. Digital NEXUS does not require user accounts, does not serve advertising, and never uploads your camera/gallery limb photos or Vault library.</p>
 
-    <h2>2. Data Stored Locally on Your Device</h2>
+    <h2>2. Data Processed &amp; Stored Locally on Your Device</h2>
     <ul>
-      <li><strong>Saved Calligrams &amp; Exports:</strong> Arabic text, font/shape settings, generated PNG calligrams, traced SVG stencils, and local entitlement status are stored privately on your phone using SQLite (Drift) and app-private files.</li>
-      <li><strong>Gallery &amp; Camera Photos:</strong> Any limb or body photo you select via Android's Photo Picker or system camera intent is loaded temporarily into memory for local GPU shader rendering on your device. Photos are never uploaded to Digital NEXUS servers.</li>
-      <li><strong>Optional BYOK Gemini API Key:</strong> If you choose to supply your own Google AI Studio key, the key is stored locally inside encrypted Android device storage (<code>flutter_secure_storage</code>) and never sent to Digital NEXUS.</li>
+      <li><strong>Saved Calligrams &amp; Exports:</strong> Arabic text, font/shape settings, generated PNG calligrams, traced SVG stencils, 3D STL CAD exports, and local entitlement status are stored privately on your phone using SQLite (Drift) and app-private files.</li>
+      <li><strong>Gallery &amp; Camera Photos:</strong> Any limb or body photo you select via Android's Photo Picker or system camera intent stays 100% on your device (segmented locally via on-device ML Kit and rendered via local GPU shaders). Photos never leave your phone.</li>
+      <li><strong>Offline Anonymous Install ID:</strong> Naqsh generates a random app-local device identifier file solely to count optional AI Studio free credits if you trigger cloud generation.</li>
     </ul>
 
-    <h2>3. Optional User-Initiated Gemini AI Mode (BYOK)</h2>
-    <p>The core studio runs 100% offline. If you explicitly turn on <em>Gemini AI + Orthography Critic (BYOK)</em> with your own Google AI Studio API key, requests containing only your typed Arabic text prompt, style parameters, and generated calligram PNG are transmitted over HTTPS directly from your device to Google LLC (<code>generativelanguage.googleapis.com</code>) under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and Google AI Studio API terms.</p>
+    <h2>3. Optional User-Initiated AI Bespoke Mode</h2>
+    <p>Curated Gallery Masters, the offline calligraphy engine, 2.5D Skin simulation, Vector SVG/PDF export, and 3D CAD mesh generation run 100% locally offline. Only if AI Studio is enabled in your build and you explicitly tap <strong>AI Bespoke</strong>, your device sends an HTTPS request containing solely: the short Arabic text phrase, chosen script and silhouette preset, an optional monochrome stencil contour mask for letter-spelling accuracy, your random install identifier (for quota tracking), and an active Google Play purchase token (if Pro). No photos, contacts, or personal account details are sent. Requests route through Digital NEXUS's Cloudflare Worker &amp; R2 global phrase cache to upstream AI image providers (OpenAI / Google Gemini API) and generated monochrome stencils are cached by text/style key to eliminate redundant calls.</p>
 
     <h2>4. Google Play Billing &amp; Platform Services</h2>
-    <p>Naqsh uses <strong>Google Play Billing</strong> for optional one-time Stencil Packs and Pro Studio subscriptions. Digital NEXUS never sees your credit card or payment credentials. Google Play handles checkout and sends technical billing diagnostics and purchase records (order ID, SKU, timestamp, status) for purchase restoration and accounting under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p>Naqsh uses <strong>Google Play Billing</strong> for optional one-time Stencil Packs and Pro Studio subscriptions. Digital NEXUS never sees your credit card or payment credentials. Google Play handles checkout and sends technical billing diagnostics and purchase records (order ID, SKU, timestamp, status) for purchase restoration and subscription entitlement verification under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
     <h2>5. Permissions &amp; Sharing</h2>
-    <p>Naqsh declares only Internet and Google Play Billing permissions (<code>INTERNET</code>, <code>com.android.vending.BILLING</code>). Selecting a camera or gallery photo delegates to Android's system Photo Picker / Camera intent without requiring persistent camera recording privileges or background storage access. When you tap Export (SVG, PNG, or Artist Sheet), Android's share sheet sends the exported file only to the destination app you choose.</p>
+    <p>Naqsh declares only Internet and Google Play Billing permissions (<code>INTERNET</code>, <code>com.android.vending.BILLING</code>). Selecting a camera or gallery photo delegates to Android's system Photo Picker / Camera intent without requiring persistent camera recording privileges or background storage access. When you tap Export (PNG, SVG, PDF, 3D STL, or Artist Sheet), Android's share sheet sends the exported file only to the destination app you choose.</p>
 
     <h2>6. Deleting Your Data</h2>
-    <p>You can delete individual saved calligrams anytime inside the <strong>Vault</strong> tab, clear your BYOK API key inside the Compose key dialog, or remove all local app data via Android Settings &rarr; Apps &rarr; Naqsh &rarr; Clear Storage or by uninstalling the app.</p>
+    <p>You can delete individual saved calligrams anytime inside the <strong>Vault</strong> tab, or remove all local app data and your anonymous device identifier via Android Settings &rarr; Apps &rarr; Naqsh &rarr; Clear Storage or by uninstalling the app.</p>
 
     <h2>7. Disclaimer</h2>
     <p>2.5D skin previews and dermal ink-spread aging estimates are artistic simulations only and do not predict medical or biological skin healing. Always verify Arabic spelling, diacritics, and final stencil scale with a licensed tattoo artist prior to tattooing.</p>
